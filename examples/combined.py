@@ -25,10 +25,13 @@ from pms5003 import SerialTimeoutError
 
 from enviroplus import gas
 
+# Changed to save a JSON file of the logs, as well as print to console. However changes should be made to stop so many writes to SD Card. 
 logging.basicConfig(
     format="%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s",
     level=logging.INFO,
-    datefmt="%Y-%m-%d %H:%M:%S")
+    handlers=[logging.FileHandler("sensor_logs.json"),
+              logging.StreamHandler()],
+    datefmt="%d-%m-%Y %H:%M:%S")
 
 logging.info("""combined.py - Displays readings from all of Enviro plus' sensors
 
