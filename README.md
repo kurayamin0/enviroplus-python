@@ -34,8 +34,9 @@ And if you're using a PMS5003 sensor you will need to:
 
 ### Autorun
 
-* Firstly create a new service. '''sudo nano /etc/systemd/system/enviro.service''' This creates a service called 'enviro'
-* In this .service file you will need to add some details about the service. Below is a template, but you will need to    change the directories as required.
+* Firstly create a new service. `sudo nano /etc/systemd/system/<servicename>.service` This creates a service called  whatever you wish to name the service to auto run your script.
+
+* In this .service file you will need to add some details about the service. Below is a template, but you will need to    change the directories etc as required.
 
 ```
 [Unit]
