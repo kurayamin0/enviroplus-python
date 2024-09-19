@@ -8,7 +8,7 @@ Follow Standard Pimoroni Install instructions.
 
 ## Install and configure dependencies from GitHub:
 
-* `git clone https://github.com/pimoroni/enviroplus-python` or 'git clone https://github.com/kurayamin0/enviroplus-python
+* `git clone https://github.com/pimoroni/enviroplus-python` or `git clone https://github.com/kurayamin0/enviroplus-python`
 * `cd enviroplus-python`
 * `./install.sh`
 
@@ -37,7 +37,7 @@ And if you're using a PMS5003 sensor you will need to:
 * Firstly create a new service. '''sudo nano /etc/systemd/system/enviro.service''' This creates a service called 'enviro'
 * In this .service file you will need to add some details about the service. Below is a template, but you will need to    change the directories as required.
 
-'''
+```
 [Unit]
 Description=<Whatever you want to call the service eg enviroplus with virtual env>
 After=network.target
@@ -54,12 +54,12 @@ Environment=PYTHONUNBUFFERED=1
 
 [Install]
 WantedBy=multi-user.target
-'''
+```
 
 * Once you've made the changes to username save the changes.
 * Run the follow three commands
-'''
+```
 sudo systemctl daemon-reload
 sudo systemctl start <your_service_name>.service
 sudo systemctl status <your_service_name>.service
-'''
+```
