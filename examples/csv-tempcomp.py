@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+""" Script by Kurayamin0 https://github.com/kurayamin0/enviroplus-python """
+
 import colorsys
 import sys
 import time
