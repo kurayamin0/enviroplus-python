@@ -67,9 +67,9 @@ sudo systemctl status <your_service_name>.service
 
 You should now be fully installed and after rebooting your script should automatically run.
 
-[csv-tempcomp.py]
+### csv-tempcomp.py
 I've included my personal script that I am running. 
-* It runs everything including PMS5003, although it doesn't include noise. The main difference between my script is that it saves the readings to a memory buffer and only writes them to the SD card every 15 minutes. I've done this to avoid constantly writing data to the SD card for increase longevity.
+* It runs everything including PMS5003, although it doesn't include noise. The main difference between my script is that it saves the readings to a memory buffer and only writes them to the SD card every 15 minutes. I've done this to avoid constantly writing data to the SD card for increased longevity.
 
 * The data is saved as a .csv file named 'sensor_data' with the following headings.
   timestamp in D-M-Y H:M:S format, temperature, humidity, pressure, light, oxidising, reducing, nh3, pm1, pm2_5, pm10.
