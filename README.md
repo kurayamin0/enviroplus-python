@@ -63,3 +63,5 @@ sudo systemctl daemon-reload
 sudo systemctl start <your_service_name>.service
 sudo systemctl status <your_service_name>.service
 ```
+
+You should now be fully installed and after rebooting your script should automatically run.
