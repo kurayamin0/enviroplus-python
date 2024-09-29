@@ -61,6 +61,7 @@ WantedBy=multi-user.target
 * Run the follow three commands
 ```
 sudo systemctl daemon-reload
+sudo systemctl enable <your_service_name>.service
 sudo systemctl start <your_service_name>.service
 sudo systemctl status <your_service_name>.service
 ```
